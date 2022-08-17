@@ -1,83 +1,12 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Maison Marguery - Boucherie Granville - </title>
-    <!-- <link rel="stylesheet" href="/css/main.css"> -->
-    <link rel="stylesheet" href="http://localhost:4000/css/main.css">
-    <!-- <link rel="stylesheet" href="/css/main.css"> -->
-  </head>
-  <body>
-    <div class="container-flex">
+---
+layout: default
+title: "Maison Marguery - Boucherie Granville"
+---
+<div class="container-flex">
   <div class="bghome">
-    <div class="d-none d-sm-block">
-  <nav class="navbar navbar-light justify-content-center">
-    <a class="navbar-brand" href="#">
-      <img src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413277/logo_hdqd5a.png" alt="logo_maison_marguery" class="logo">
-      <!-- <%= cl_image_tag("logo_hdqd5a.png", :height=>60, :width=>120, :crop=>"scale", class: "logo") %> -->
-    </a>
-  </nav>
-</div>
+    {% include navbar.html %}
 
-<!-- "logo_hdqd5a.png", :height=>60, :width=>120, :crop=>"scale" -->
-
-<div class="navbar navbar-expand-lg navbar-light sticky-top d-flex trans" id="nav1">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav "
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon bg-secondary"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-    <ul class="navbar-nav ">
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="/">Accueil <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="/boucherie">Boucherie</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="/charcuterie">Charcuterie</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="/specialites">Spécialités</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="/platsprepares">Plats Préparés</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="/livraison">Livraison</a>
-      </li>
-      <!-- <li class="nav-item px-3">
-              <a class="nav-link" style="color:white" href="/clickandcollect">Click & Collect</a>
-            </li> -->
-    </ul>
-  </div>
-</div>
-
-
-    <div class="container-fluid d-flex p-2 justify-content-center align-items-center h-50 maxw">
-      <div class="row-fluid">
-        <div class="col-12 pt-5">
-          <div>
-            <h1 class="text-center title">Maison Marguery</h1>
-          </div>
-          <div class="hr1"></div>
-          <div>
-            <p class="text-center subtitle">BOUCHER DE PÈRE EN FILS DEPUIS 1960 </p>
-          </div>
-          <div class="d-flex justify-content-center pt-5">
-
-            <div class="hr3"></div>
-
-            <p class="text-center subtitle2 correction">GRANVILLE </p>
-
-            <div class="hr3"></div>
-          </div>
-
-        </div>
-      </div>
-</div>
-
+    {% include hero.html %}
 
   </div>
 </div>
@@ -212,64 +141,3 @@
   </nav>
 </div>
 </div>
-
-    <footer class="container-fluid">
-  <div class="row p-4"> </div>
-  <a href="https://www.facebook.com/maisonmarguery/">
-    <div class="row justify-content-center pt-2" style="background-color: rgb(27, 29, 37)">
-      <img src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413277/logo_hdqd5a.png" alt="logo_maison_marguery"
-              class="logo">
-    </div>
-  </a>
-</footer>
-
-
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script>
-  var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
-
-    mapboxgl.accessToken = 'pk.eyJ1Ijoic2Vic3dhbiIsImEiOiJjazlhY2ZxMG0wOGdqM25ueTcxazE3YnNhIn0.eCxqXHuJrfRcc5sQ82LUCQ';
-
-
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11?optimize=true',
-      center: [-1.591313, 48.837438],
-      zoom: 13
-    });
-
-    var popup = new mapboxgl.Popup({ offset: 25 }).setText(
-      '120 rue Couraye 50400 Granville.'
-    );
-
-    var marker = new mapboxgl.Marker()
-      .setLngLat([-1.591313, 48.837438])
-      .setPopup(popup)
-      .addTo(map);
-
-  const initUpdateNavbarOnScroll = () => {
-    window.addEventListener("scroll", function (event) {
-      if (window.scrollY > 180) {
-        // document.getElementById('navbarNav').style.background = "black";
-        document.getElementById('nav1').style.background = "rgba(27,29,37,0.8)";
-      }
-      else {
-        document.getElementById('nav1').style.background = "transparent";
-      }
-    });
-
-  }
-  initUpdateNavbarOnScroll
-
-
-</script>
-
-
-  </body>
-</html>
