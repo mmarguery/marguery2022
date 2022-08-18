@@ -1,6 +1,14 @@
 url: "https://mmarguery.github.io/marguery2022/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Maison Marguery - Boucherie Charcuterie Granville" # the name of your site, e.g. ACME Corp.
+description: "Maison Marguery. 120, rue Couraye, à Granville (Manche). Ouvert les lundis, mardis, jeudis, vendredis et samedis de 7 h 30 à 13 h et de 15 h à 19 h 30, les mercredis de 7 h 30 à 13 h. Renseignements au 02 33 50 03 43."
+logo: "assets/images/logo.png"
+
+social:
+  name: Maison Marguery
+  links:
+    - https://www.facebook.com/maisonmarguery
+
 
 # Build settings
 sass:
