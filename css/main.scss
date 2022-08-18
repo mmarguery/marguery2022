@@ -184,3 +184,37 @@ a {
 //     width: 0;
 //     height: 0;
 // }
+
+.bgimage {
+  // width:100%;
+  width: auto;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // overflow-x: hidden
+
+}
+
+.imgboucherie {
+  background-image: linear-gradient(0deg, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413102/entrecotebw.jpg');
+
+}
+
+.imgcharcuterie {
+  background-image: linear-gradient(0deg, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413077/charcuteriebw.jpg');
+}
+
+.imglivraison {
+  background-image: linear-gradient(0deg, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595770935/chauseylandscapewb.jpg');
+
+}
+
+.imgpp {
+  background-image: linear-gradient(0deg, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413082/plats_prepares.jpg');
+}
+
+.imgspecialites {
+  background-image: linear-gradient(0deg, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413208/specialitesbw.jpg');
+}
