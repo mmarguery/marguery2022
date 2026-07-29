@@ -1,13 +1,14 @@
 url: "https://www.maisonmarguery.fr" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Maison Marguery - Boucherie Charcuterie Granville" # the name of your site, e.g. ACME Corp.
-description: "Maison Marguery. 120, rue Couraye, à Granville (Manche). Ouvert les lundis, mardis, jeudis, vendredis et samedis de 7 h 30 à 13 h et de 15 h à 19 h 30, les mercredis de 7 h 30 à 13 h. Renseignements au 02 33 50 03 43."
+description: "Maison Marguery. 29 rue du Village Prétot, 50400 Granville (Manche). Ouvert du mardi au samedi de 8 h 30 à 19 h 30. Fermé les lundis et dimanches. Renseignements au 02 33 50 03 43."
 logo: "assets/images/logo.png"
 
 social:
   name: Maison Marguery
   links:
     - https://www.facebook.com/maisonmarguery
+    - https://www.instagram.com/maison_marguery/
 
 
 # Build settings
