@@ -1,32 +1,29 @@
-{% include logo.html %}
-<div class="navbar navbar-expand-lg navbar-light sticky-top d-flex trans" id="nav1">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav "
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon bg-secondary"></span>
+<nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top" id="siteNav" aria-label="Navigation principale">
+  <a class="navbar-brand site-navbar__brand" href="{{ '/' | relative_url }}" aria-label="Maison Marguery — Accueil">
+    <img
+      src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413277/logo_hdqd5a.png"
+      alt="Maison Marguery"
+      class="site-navbar__logo">
+  </a>
+
+  <button class="navbar-toggler site-navbar__toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
+    <span></span>
+    <span></span>
+    <span></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-    <ul class="navbar-nav ">
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="{{ site.url }}/">Accueil <span class="sr-only">(current)</span></a>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto align-items-lg-center">
+      <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ '/boucherie' | relative_url }}">Boucherie</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ '/charcuterie' | relative_url }}">Charcuterie</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ '/specialites' | relative_url }}">Spécialités</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ '/platsprepares' | relative_url }}">Plats préparés</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ '/livraison' | relative_url }}">Livraison</a></li>
+      <li class="nav-item site-navbar__action">
+        <a class="btn btn-brand btn-sm" href="tel:0233500343">Nous appeler</a>
       </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="{{ site.url }}/boucherie">Boucherie</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="{{ site.url }}/charcuterie">Charcuterie</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="{{ site.url }}/specialites">Spécialités</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="{{ site.url }}/platsprepares">Plats Préparés</a>
-      </li>
-      <li class="nav-item px-3">
-        <a class="nav-link" style="color:white" href="{{ site.url }}/livraison">Livraison</a>
-      </li>
-      <!-- <li class="nav-item px-3">
-              <a class="nav-link" style="color:white" href="/clickandcollect">Click & Collect</a>
-            </li> -->
     </ul>
   </div>
-</div>
+</nav>

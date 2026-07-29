@@ -1,10 +1,42 @@
-<footer class="container-fluid">
-  <div class="row p-4"> </div>
-  <a href="https://www.facebook.com/maisonmarguery/">
-    <div class="row justify-content-center pt-2" style="background-color: rgb(27, 29, 37)">
-      <img src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413277/logo_hdqd5a.png" alt="logo_maison_marguery"
-              class="logo">
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a href="{{ '/' | relative_url }}" aria-label="Maison Marguery — Accueil">
+        <img
+          src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413277/logo_hdqd5a.png"
+          alt="Maison Marguery">
+      </a>
+      <p>Boucherie, charcuterie et plats préparés à Granville depuis 1960.</p>
     </div>
-  </a>
-</footer>
 
+    <div class="site-footer__column">
+      <h2>Nous trouver</h2>
+      <address>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=29%20Rue%20du%20Village%20Pr%C3%A9tot%2C%2050400%20Granville"
+          target="_blank" rel="noopener noreferrer">
+          29 rue du Village Prétot<br>
+          50400 Granville
+        </a>
+      </address>
+      <a href="tel:0233500343">02 33 50 03 43</a>
+    </div>
+
+    <div class="site-footer__column">
+      <h2>Horaires</h2>
+      <p>Mardi — samedi<br>8h30 — 19h30</p>
+      <p>Lundi et dimanche<br>Fermé</p>
+    </div>
+
+    <div class="site-footer__column">
+      <h2>Suivre la Maison</h2>
+      <a href="https://www.facebook.com/maisonmarguery/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/maison_marguery/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="mailto:maisonmarguery@gmail.com">Nous écrire</a>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <p>© {{ 'now' | date: '%Y' }} Maison Marguery</p>
+    <a href="#top">Retour en haut</a>
+  </div>
+</footer>

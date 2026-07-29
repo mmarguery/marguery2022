@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "fr-FR" }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <!-- <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}"> -->
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <meta name="theme-color" content="#1b1d25">
+    <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
     {% seo %}
     {% include analytic.html %}
   </head>
-  <body>
+  <body id="top">
     {{ content }}
     {% include footer.html %}
     {% include script.html %}

@@ -1,69 +1,43 @@
 ---
 layout: default
-title: "Maison Marguery - Spécialités Granville"
+title: "Spécialités de la Maison"
 ---
-<div class="bgimage imgspecialites">
-  {% include navbar.html %}
+{% include page-hero.html title="Spécialités" image_class="imgspecialites" %}
 
-      <div class="container-fluid d-flex p-2 justify-content-center align-items-center h-50 maxw">
-        <div class="row-fluid">
-          <div class="col-12">
-            <div>
-              <h1 class="text-center title">Spécialités</h1>
-            </div>
-            <div class="hr1"></div>
-
-          </div>
-        </div>
+<main class="content-page">
+  <div class="content-stack">
+    <article class="content-section">
+      <div class="content-copy">
+        <p class="section-kicker">Les incontournables</p>
+        <h2>Nos spécialités</h2>
+        <ul class="product-list product-list--spaced">
+          <li>Le fameux Oursin Granvillais, un produit unique sollicité par les habitués</li>
+          <li>Rillettes de porc et saucisson à l’ail</li><li>Poitrine fumée au feu de bois</li>
+          <li>Saucisse au curry</li><li>Saucisse à l’oignon</li>
+        </ul>
       </div>
-</div>
+      <figure class="content-media">
+        <img src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413271/oursin_granvillais3.jpg"
+          alt="Oursin Granvillais, spécialité de la Maison Marguery" loading="lazy" decoding="async">
+      </figure>
+    </article>
 
-<div class="container">
-
-  <div class="row p-4"></div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-6 px-5">
-      <h2 class="pb-2 titlearg">
-        <div class="hr2"></div> Nos spécialités
-      </h2>
-      <p class="pl-2 parg"> - Le fameux Oursin Granvillais, un produit unique sollicité par les habitués <br>
-        <br>- Rillettes de porc, saucisson à l‘ail <br>
-        <br>- Poitrine fumée au feu de bois <br>
-        <br>- Saucisse au curry <br>
-        <br>- Saucisse à l'oignon
-
-    </div>
-    <div class="col-xs-12 col-md-6 d-flex justify-content-center align-items-center">
-      <img src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413271/oursin_granvillais3.jpg" class="imgarg shadow"
-        style="width:400" alt="">
-    </div>
+    <article class="content-section content-section--reverse">
+      <div class="content-copy">
+        <p class="section-kicker">À offrir et à partager</p>
+        <h2>Épicerie</h2>
+        <p>Pour remercier, faire plaisir ou faire découvrir… pensez aux coffrets cadeaux de la Maison Marguery !</p>
+        <p>Retrouvez nos compositions originales, réunissant les essentiels de l’épicerie et des spécialités locales.</p>
+      </div>
+      <figure class="content-media">
+        <img src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413271/epicerie1.jpg"
+          alt="Sélection de produits d’épicerie de la Maison Marguery" loading="lazy" decoding="async">
+      </figure>
+    </article>
   </div>
 
-  <div class="row p-4"></div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-6 d-flex justify-content-center align-items-center">
-      <img src="https://res.cloudinary.com/dcsdo2rdb/image/upload/v1595413271/epicerie1.jpg" class="imgarg shadow"
-        style="width:400" alt="">
-    </div>
-    <div class="col-xs-12 order-first col-md-6 px-5 order-md-last ">
-      <h2 class="pb-2 titlearg">
-        <div class="hr2"></div> Epicerie
-      </h2>
-      <p class="pl-2 parg"> Pour remercier, faire plaisir ou faire découvrir… pensez aux coffrets cadeaux de la maison
-        Marguery !
-        <br>
-        <br> Retrouvez nos compositions originales, réunissant les essentiels de l’épicerie et des spécialités locales.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div class="text-center pt-5">
-  <p>La disponibilité des produits peut varier en fonction de la saison et de la demande.</p>
-</div>
-
-<div class="text-center pt-5 ">
-  <a href="{{ site.url }}/" class="btn btn-dark"> Retour </a>
-</div>
+  <aside class="page-cta">
+    <p>La disponibilité des produits peut varier en fonction de la saison et de la demande.</p>
+    <div><a href="{{ '/' | relative_url }}" class="btn btn-outline-dark">Retour à l’accueil</a><a href="tel:0233500343" class="btn btn-brand">Nous appeler</a></div>
+  </aside>
+</main>
